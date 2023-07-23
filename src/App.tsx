@@ -3,7 +3,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import RootPage from "./pages/root";
 import WhatIsCashbackPage from "./pages/WhatIsCashbackPage";
 import AboutUsPage from "./pages/AboutUsPage";
-import CompanyCashback from "./pages/CompanyCashback";
+import CompanyCashback from "./pages/CompanyCashbackPage";
 
 function App() {
     const routes = createBrowserRouter([

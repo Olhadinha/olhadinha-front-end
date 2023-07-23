@@ -1,7 +1,10 @@
+import HeaderComponent from "../../components/HeaderComponent";
+
 export default function RootPage() {
     return (
         <>
-            <h2 className="text-3xl font-bold underline">Main page</h2>
+            <HeaderComponent />
+            <h2>ROOT PAGE</h2>
         </>
     );
 }
