@@ -2,6 +2,9 @@ import styles from "./header.module.css";
 import { NavLink } from "react-router-dom";
 
 import logo from "../../assets/logo.svg";
+import cardIcon from "../../assets/cardIcon.svg"
+import moneyBill from "../../assets/moneyBillIcon.svg"
+import moonIcon from "../../assets/moonIcon.svg"
 
 export default function Header() {
     return (
@@ -12,14 +15,19 @@ export default function Header() {
             <nav>
                 <ul className={styles.list_links}>
                     <li>
+                        <img src={cardIcon}/>
                         <NavLink to="/sobre-nos">Sobre nós</NavLink>
                     </li>
                     <li>
+                        <img src={moneyBill}/>
                         <NavLink to="/o-que-e-cashback">
                             O que é cashback?
                         </NavLink>
                     </li>
-                    <li>Modo Escuro</li>
+                    <li>
+                        <img src={moonIcon}/>
+                        Modo Escuro
+                    </li>
                 </ul>
             </nav>
         </header>
