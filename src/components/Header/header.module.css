@@ -22,6 +22,9 @@
 
 .list_links li {
     list-style: none;
+    display: flex;
+    gap: 0.4rem;
+    cursor: pointer;
 }
 
 .list_links li a {
