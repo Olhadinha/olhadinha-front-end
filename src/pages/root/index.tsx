@@ -1,3 +1,5 @@
+import { BrowserRouter } from "react-router-dom";
+
 import Header from "../../components/Header";
 import olhadinhaName from "../../assets/OlhadinhaName.svg"
 import styles from "./index.module.css"
@@ -7,7 +9,7 @@ import logoIcon from "../../assets/LogoIcon.svg"
 export default function RootPage() {
     document.title = "Olhadinha Cashback";
     return (
-        <>
+        <BrowserRouter>
             <Header />
             <main>
                 <div className={styles.content}>
@@ -28,6 +30,6 @@ export default function RootPage() {
                     </div>
                 </div>
             </main >
-        </>
+        </BrowserRouter>
     );
 }
