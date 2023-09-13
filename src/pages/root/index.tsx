@@ -21,11 +21,11 @@ export default function RootPage() {
 
                     <div className={styles.searchBar}>
                         <div className={styles.wrapperInput}>
-                            <img src={lupaIcon} alt="" />
+                            <img src={lupaIcon} alt="Lupa Icon" />
                             <input type="text" id="inputName" placeholder="Procurar loja..." />
                         </div>
                         <button className={styles.searchButton}>
-                            <img src={logoIcon} />
+                            <img src={logoIcon} alt="Logo Olhadinha Icon" />
                         </button>
                     </div>
                 </div>

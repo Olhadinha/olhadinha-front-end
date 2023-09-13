@@ -10,22 +10,22 @@ export default function Header() {
     return (
         <header className={styles.header}>
             <NavLink to="/">
-                <img src={logo} alt="" />
+                <img src={logo} alt="Olhadinha Logo" />
             </NavLink>
             <nav>
                 <ul className={styles.list_links}>
                     <li>
-                        <img src={cardIcon}/>
+                        <img src={cardIcon} alt="Card Icon" />
                         <NavLink to="/sobre-nos">Sobre nós</NavLink>
                     </li>
                     <li>
-                        <img src={moneyBill}/>
+                        <img src={moneyBill} alt="Cédula Icon" />
                         <NavLink to="/o-que-e-cashback">
                             O que é cashback?
                         </NavLink>
                     </li>
                     <li>
-                        <img src={moonIcon}/>
+                        <img src={moonIcon} alt="Lua Icon" />
                         Modo Escuro
                     </li>
                 </ul>
