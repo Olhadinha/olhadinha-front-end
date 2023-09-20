@@ -1,16 +1,25 @@
 import "@testing-library/jest-dom";
-import { render } from "@testing-library/react";
+import { render, screen } from "@testing-library/react";
+import { BrowserRouter } from "react-router-dom";
 import { describe, test } from "vitest";
 import AboutUsPage from ".";
 
 describe("App test", () => {
     test("It component to render in page?", () => {
-        const { getByText } = render(<AboutUsPage />);
-        expect(getByText("Sobre nos, testing")).toBeInTheDocument();
+        render(
+            <BrowserRouter>
+                <AboutUsPage />
+            </BrowserRouter>
+        );
+        expect(screen.getByText("Sobre nos, testing")).toBeInTheDocument();
     });
 
     test("testing text element create dinamic", () => {
-        const { getByTestId } = render(<AboutUsPage />);
-        expect(getByTestId("p_sum")).toHaveTextContent("5");
+        render(
+            <BrowserRouter>
+                <AboutUsPage />
+            </BrowserRouter>
+        );
+        expect(screen.getByTestId("p_sum")).toHaveTextContent("5");
     });
 });
