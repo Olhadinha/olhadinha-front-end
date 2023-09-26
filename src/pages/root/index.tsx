@@ -9,12 +9,12 @@ export default function RootPage() {
     return (
         <>
             <Header />
-            <main>
-                <div className={styles.content}>
+            <main className={styles.RootMain}>
+                <div className={styles.RootContent}>
 
                     <div className={styles.text}>
                         <span className="">Dê uma <img src={olhadinhaName} alt="Olhadinha" /> no melhor cashback</span>
-                        <span>para sua plataforma favorita de compras.</span>
+                        <span>disponível sua loja favorita de compras.</span>
                     </div>
 
                     <div className={styles.searchBar}>
